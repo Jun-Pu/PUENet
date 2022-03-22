@@ -10,19 +10,30 @@ Uncertainty is inherent in machine learning methods, especially those for camouf
 
 ------
 
+# Model Architecture
+
+<p align="center">
+    <img src="./figures/fig_model.jpg"/> <br />
+    <em> 
+    Figure 1: The structures of our “Bayesian conditional variational auto-encoder” (BCVAE) based COD network, and the “predictive uncertainty approximation” (PUA) module. SAM denotes “selective attention module”. D-ASPP means the “DenseASPP block”. Fusion is “residual convolutional fusion block” from MiDaS(https://github.com/isl-org/MiDaS). “z” denotes latent variables of prior or posterior distribution models.
+    </em>
+</p>
+
+------
+
 # Performance
 
 <p align="center">
     <img src="./figures/fig_performance_quan.jpg"/> <br />
     <em> 
-    Figure 1: Performance comparison with state-of-the-art COD models. * denotes models trained on multi-scale.
+    Figure 2: Performance comparison with state-of-the-art COD models. * denotes models trained on multi-scale.
     </em>
 </p>
 
 <p align="center">
     <img src="./figures/fig_performance_qual.jpg"/> <br />
     <em> 
-    Figure 2: Visual results of our PUENet and the competing models. “predictive uncertainty approximation” (PUA) module provides “σa2”, which approximates the sampling based predictive uncertainty, i.e., “σe2”.
+    Figure 3: Visual results of our PUENet and the competing models. “predictive uncertainty approximation” (PUA) module provides “σa2”, which approximates the sampling based predictive uncertainty, i.e., “σe2”.
     </em>
 </p>
 
