@@ -30,7 +30,9 @@ Uncertainty is inherent in machine learning methods, especially those for camouf
 
 # Implementation
 
+The codes are available at [codes]()
+
 The training and testing datasets can be downloaded at [COD10K-train](https://drive.google.com/file/d/1D9bf1KeeCJsxxri6d2qAC7z6O1X_fxpt/view) and [COD10K-test + CAMO-test + CHAMELEON](https://drive.google.com/file/d/1QEGnP9O7HbN_2tH999O3HRIsErIVYalx/view), respectively.
 
-The results of our PUENet are available at [PUENet-results].
+The results of our PUENet are available at [PUENet-model] and [PUENet-predictions].
 
