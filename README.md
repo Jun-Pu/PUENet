@@ -10,17 +10,6 @@ Uncertainty is inherent in machine learning methods, especially those for camouf
 
 ------
 
-# Model Architecture
-
-<p align="center">
-    <img src="./figures/fig_model.jpg"/> <br />
-    <em> 
-    Figure 1: The structures of our “Bayesian conditional variational auto-encoder” (BCVAE) based COD network, and the “predictive uncertainty approximation” (PUA) module. SAM denotes “selective attention module”. D-ASPP means the “DenseASPP block”. Fusion is “residual convolutional fusion block” from MiDaS(https://github.com/isl-org/MiDaS). “z” denotes latent variables of prior or posterior distribution models.
-    </em>
-</p>
-
-------
-
 # Performance
 
 <p align="center">
