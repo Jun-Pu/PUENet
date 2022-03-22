@@ -15,7 +15,7 @@ Uncertainty is inherent in machine learning methods, especially those for camouf
 <p align="center">
     <img src="./figures/fig_performance_quan.jpg"/> <br />
     <em> 
-    Figure 1: Performance comparison with state-of-the-art COD models.
+    Figure 1: Performance comparison with state-of-the-art COD models. * denotes models trained on multi-scale.
     </em>
 </p>
 
