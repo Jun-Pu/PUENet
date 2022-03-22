@@ -15,14 +15,14 @@ Uncertainty is inherent in machine learning methods, especially those for camouf
 <p align="center">
     <img src="./figures/fig_performance_quan.jpg"/> <br />
     <em> 
-    Figure 5: Performance comparison with state-of-the-art COD models.
+    Figure 1: Performance comparison with state-of-the-art COD models.
     </em>
 </p>
 
 <p align="center">
     <img src="./figures/fig_performance_qual.jpg"/> <br />
     <em> 
-    Figure 5: Visual results of our PUENet and the competing models.
+    Figure 2: Visual results of our PUENet and the competing models.
     </em>
 </p>
 
@@ -30,8 +30,9 @@ Uncertainty is inherent in machine learning methods, especially those for camouf
 
 # Implementation
 
-The codes are available at:
+The codes are available at: 
 
-The datasets can be downloaded at:
+The training and testing datasets can be downloaded at [COD10K-train] and [COD10K-test + CAMO-test + CHAMELEON], respectively.
 
-The results of our PUENet are available at:
+The results of our PUENet are available at [PUENet-results].
+
