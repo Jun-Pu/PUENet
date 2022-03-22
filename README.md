@@ -22,7 +22,7 @@ Uncertainty is inherent in machine learning methods, especially those for camouf
 <p align="center">
     <img src="./figures/fig_performance_qual.jpg"/> <br />
     <em> 
-    Figure 2: Visual results of our PUENet and the competing models.
+    Figure 2: Visual results of our PUENet and the competing models. “predictive uncertainty approximation” (PUA) module provides “σa2”, which approximates the sampling based predictive uncertainty, i.e., “σe2”.
     </em>
 </p>
 
