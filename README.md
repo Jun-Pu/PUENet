@@ -32,7 +32,7 @@ Uncertainty is inherent in machine learning methods, especially those for camouf
 
 The codes are available at: 
 
-The training and testing datasets can be downloaded at [COD10K-train] and [COD10K-test + CAMO-test + CHAMELEON], respectively.
+The training and testing datasets can be downloaded at [COD10K-train](https://drive.google.com/file/d/1D9bf1KeeCJsxxri6d2qAC7z6O1X_fxpt/view) and [COD10K-test + CAMO-test + CHAMELEON], respectively.
 
 The results of our PUENet are available at [PUENet-results].
 
