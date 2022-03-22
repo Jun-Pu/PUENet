@@ -4,82 +4,8 @@ import torch.utils.data as data
 import torchvision.transforms as transforms
 import random
 import numpy as np
-from PIL import ImageEnhance
 import torch
 
-
-# several data augumentation strategies
-def cv_random_flip(img, label):
-    flip_flag = random.randint(0, 1)
-    if flip_flag == 1:
-        img = img.transpose(Image.FLIP_LEFT_RIGHT)
-        label = label.transpose(Image.FLIP_LEFT_RIGHT)
-    return img, label
-
-
-def randomCrop(image, label):
-    border = 30
-    image_width = image.size[0]
-    image_height = image.size[1]
-    crop_win_width = np.random.randint(image_width - border, image_width)
-    crop_win_height = np.random.randint(image_height - border, image_height)
-    random_region = (
-        (image_width - crop_win_width) >> 1, (image_height - crop_win_height) >> 1, (image_width + crop_win_width) >> 1,
-        (image_height + crop_win_height) >> 1)
-    return image.crop(random_region), label.crop(random_region)
-
-
-def randomRotation(image, label):
-    mode = Image.BICUBIC
-    if random.random() > 0.8:
-        random_angle = np.random.randint(-15, 15)
-        image = image.rotate(random_angle, mode)
-        label = label.rotate(random_angle, mode)
-    return image, label
-
-
-def colorEnhance(image):
-    bright_intensity = random.randint(5, 15) / 10.0
-    image = ImageEnhance.Brightness(image).enhance(bright_intensity)
-    contrast_intensity = random.randint(5, 15) / 10.0
-    image = ImageEnhance.Contrast(image).enhance(contrast_intensity)
-    color_intensity = random.randint(0, 20) / 10.0
-    image = ImageEnhance.Color(image).enhance(color_intensity)
-    sharp_intensity = random.randint(0, 30) / 10.0
-    image = ImageEnhance.Sharpness(image).enhance(sharp_intensity)
-    return image
-
-
-def randomGaussian(image, mean=0.1, sigma=0.35):
-    def gaussianNoisy(im, mean=mean, sigma=sigma):
-        for _i in range(len(im)):
-            im[_i] += random.gauss(mean, sigma)
-        return im
-
-    img = np.asarray(image)
-    width, height = img.shape
-    img = gaussianNoisy(img[:].flatten(), mean, sigma)
-    img = img.reshape([width, height])
-    return Image.fromarray(np.uint8(img))
-
-
-def randomPeper(img):
-    img = np.array(img)
-    noiseNum = int(0.0015 * img.shape[0] * img.shape[1])
-    for i in range(noiseNum):
-
-        randX = random.randint(0, img.shape[0] - 1)
-
-        randY = random.randint(0, img.shape[1] - 1)
-
-        if random.randint(0, 1) == 0:
-
-            img[randX, randY] = 0
-
-        else:
-
-            img[randX, randY] = 255
-    return Image.fromarray(img)
 
 
 # dataset for training
@@ -103,35 +29,12 @@ class SalObjDataset(data.Dataset):
             transforms.Resize((self.trainsize, self.trainsize)),
             transforms.ToTensor()])
 
-        # for 360
-        #self.trainsize = trainsize
-        #with open(os.getcwd() + '/Pano_dataset/av/train_img_total.txt', 'r') as f:
-        #    self.images = [x.strip() for x in f.readlines()]
-        #with open(os.getcwd() + '/Pano_dataset/av/train_msk_total.txt', 'r') as f:
-        #    self.gts = [x.strip() for x in f.readlines()]
-        #self.size = len(self.images)
-        #self.img_transform = transforms.Compose([
-        #    transforms.Resize((self.trainsize, self.trainsize)),
-        #    transforms.ToTensor(),
-        #    transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])])
-        #self.gt_transform = transforms.Compose([
-        #    transforms.Resize((self.trainsize, self.trainsize)),
-        #    transforms.ToTensor()])
 
     def __getitem__(self, index):
         image = self.rgb_loader(self.images[index])
         gt = self.binary_loader(self.gts[index])
-        image, gt = cv_random_flip(image, gt)
-        image, gt = randomCrop(image, gt)
-        image, gt = randomRotation(image, gt)
-        image = colorEnhance(image)
-        # gt=randomGaussian(gt)
-        gt = randomPeper(gt)
         image = self.img_transform(image)
         gt = self.gt_transform(gt)
-        # depth = depth//(255*255)
-        # depth = torch.tensor(depth, dtype=torch.float)
-        # depth = torch.FloatTensor(depth)
 
         return image, gt
 
@@ -203,15 +106,6 @@ class test_dataset:
         self.size = len(self.images)
         self.index = 0
 
-        #self.testsize = testsize
-        #with open(image_root, 'r') as f:
-        #    self.images = [x.strip() for x in f.readlines()]
-        #self.transform = transforms.Compose([
-        #    transforms.Resize((self.testsize, self.testsize)),
-        #    transforms.ToTensor(),
-        #    transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])])
-        #self.size = len(self.images)
-        #self.index = 0
 
     def load_data(self):
         image = self.rgb_loader(self.images[self.index])
