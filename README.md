@@ -1,6 +1,6 @@
 # Predictive Uncertainty Estimation for Camouflaged Object Detection
 
-PDF coming soon.
+PDF coming soon...
 
 ------
 
