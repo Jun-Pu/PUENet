@@ -1,25 +1,5 @@
 # Predictive Uncertainty Estimation for Camouflaged Object Detection
 
-PDF coming soon...
-
-------
-
-# Performance
-
-<p align="center">
-    <img src="./figures/fig_performance_quan.jpg"/> <br />
-    <em> 
-    Figure 2: Performance comparison with state-of-the-art COD models. * denotes models trained on multi-scale.
-    </em>
-</p>
-
-<p align="center">
-    <img src="./figures/fig_performance_qual.jpg"/> <br />
-    <em> 
-    Figure 3: Visual results of our PUENet and the competing models. “predictive uncertainty approximation” (PUA) module provides “σa2”, which approximates the sampling based predictive uncertainty, i.e., “σe2”.
-    </em>
-</p>
-
 ------
 
 # Implementation
