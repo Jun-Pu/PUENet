@@ -139,7 +139,7 @@ def print_network(model, name):
     num_params = 0
     for p in model.parameters():
         num_params += p.numel()
-    print(model)
+    #print(model)
     print(name)
     print("The number of parameters: {}".format(num_params))
 
