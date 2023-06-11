@@ -1,5 +1,7 @@
 
-# Benchmark
+# [Predictive Uncertainty Estimation for Camouflaged Object Detection (TIP 2023)](https://drive.google.com/file/d/1t6x6Cn0V7xy3x_UwS6wyUx-WtLJDwDMO/view?usp=sharing)
+
+------
 
 # Implementation
 
