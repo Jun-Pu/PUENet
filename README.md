@@ -16,7 +16,7 @@ Uncertainty is inherent in machine learning methods, especially those for camouf
 </p>
 
 <p align="center">
-    <img src="./figs/fig_model_pipeline.jpg"/> <br />
+    <img src="./figs/fig_model_architecture.jpg"/> <br />
     <em> 
     Figure 2: Architectures of “predictive uncertainty approximation” (PUA) module (ω), and “Bayesian conditional variational auto-encoder” BCVAE’s encoder/prior-based decoder. Please refer to the paper for details.
     </em>
