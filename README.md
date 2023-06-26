@@ -2,8 +2,6 @@
 
 Authors: [*Yi Zhang*](https://scholar.google.com/citations?user=NeHBHVUAAAAJ&hl=en), [*Jing Zhang*](https://scholar.google.com.au/citations?user=Qa1DMv8AAAAJ&hl=en), [*Wassim Hamidouche*](https://scholar.google.com/citations?user=ywBnUIAAAAAJ&hl=en), [*Olivier Deforges*](https://scholar.google.com/citations?user=c5DiiBUAAAAJ&hl=en)
 
-> Note: Jing Zhang is the corresponding author
-
 ------
 
 # Introduction
