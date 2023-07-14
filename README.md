@@ -1,4 +1,4 @@
-# [Predictive Uncertainty Estimation for Camouflaged Object Detection (TIP 2023)](https://drive.google.com/file/d/1t6x6Cn0V7xy3x_UwS6wyUx-WtLJDwDMO/view?usp=sharing)
+# [Predictive Uncertainty Estimation for Camouflaged Object Detection (TIP 2023)](https://drive.google.com/file/d/1W9DGI4kan3--OcBoDGz9LQnPSqOK9e6H/view?usp=sharing)
 
 Authors: [*Yi Zhang*](https://scholar.google.com/citations?user=NeHBHVUAAAAJ&hl=en), [*Jing Zhang*](https://scholar.google.com.au/citations?user=Qa1DMv8AAAAJ&hl=en), [*Wassim Hamidouche*](https://scholar.google.com/citations?user=ywBnUIAAAAAJ&hl=en), [*Olivier Deforges*](https://scholar.google.com/citations?user=c5DiiBUAAAAJ&hl=en)
 
