@@ -55,3 +55,15 @@ The training and testing datasets can be downloaded at [COD10K-train](https://dr
 
 The results of our PUENet are available at [PUENet-model](https://drive.google.com/file/d/1kGMaF1IlE9qcng8C9au4WG2c71-hAbEN/view?usp=sharing) and [PUENet-predictions](https://drive.google.com/file/d/16-zoDfdkZfU5M50GDeupM2iOlrzozq22/view?usp=sharing).
 
+------
+
+# Citation
+
+    @article{zhang2023predictive,
+             title={Predictive Uncertainty Estimation for Camouflaged Object Detection},
+             author={Zhang, Yi and Zhang, Jing and Hamidouche, Wassim and Deforges, Olivier},
+             journal={IEEE Transactions on Image Processing (TIP)},
+             year={2023},
+             publisher={IEEE}
+    }
+
